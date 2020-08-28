@@ -1,0 +1,388 @@
+/* 网页初始化 */
+body,
+html,
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	font: 12px arial, heivetice, sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	vertical-align: middle;
+	/* 垂直居中 */
+	font-size: 14px;
+	color: red;
+}
+
+.fl {
+	float: left;
+	/* 左浮动 */
+}
+
+.fr {
+	float: right;
+	/* 右浮动 */
+}
+
+.clear:after {
+	/* 清除浮动 */
+	content: ' ';
+	display: block;
+	clear: both;
+}
+
+/* 超链接样式 */
+a:link{color: #000000;}
+a:visited{color: #000000;}
+a:hover{color: #FF6600;}
+a:active{color: #FF6600;}
+
+/* 整个网页 */
+body{
+	background-color: #FCFCFC;
+}
+
+
+
+/* 2 头部 */
+#headNav {
+	padding: 16px;
+	border-bottom: 1px solid #1E1E1E;
+	box-shadow: 0px 0px 10px #cccccc;
+	background-color: #FFFFFF;
+}
+
+/* 2.1 头部大框 */
+.innerHeader {
+	width: 1200px;
+	margin: 0 auto;
+	position: relative;
+}
+
+/* 2.2 右边 个人中心 */
+.headerFont {
+	margin-top: 18px;
+	/* border: 1px solid red; */
+}
+
+.headerFont span {
+	color: #999999;
+}
+
+/* 个人中心 超链接 */
+.headerFont a {
+	color: #007EDB;
+	line-height: 20px;
+	vertical-align: middle;
+}
+
+.headerFont a:hover {
+	color: #FF6600;
+}
+
+/* 帮助中心 */
+.headerFont .heIpCenter {
+	color: #000000;
+	margin-left: 25px;
+
+}
+
+/* 自定义标签 */
+.runbun,
+.turnb {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	margin: 0px 5px;
+	vertical-align: middle;
+}
+
+/* 游泳圈 */
+.runbun {
+	background: url(../img/runbun.png) no-repeat;
+	background-size: 100% 100%;	/* 宽	高 */
+	position: relative;
+	/* 相对定位 */
+	bottom: 1px;
+}
+
+.turnb {
+	background: url(../img/turnb.png) no-repeat;
+	background-size: 100% 100%;	/* 宽	高 */
+}
+
+.helpCenterList {
+	line-height: 24px;
+	width: 98px;
+	border: 1px solid #CCCCCC;
+	position: absolute;
+	right: 2px;
+	top: 15px;
+}
+
+/* 下拉列表 */
+.hList li{
+	height: 24px;
+	line-height: 24px;
+	border-top: 1px solid #CCCCCC;
+	text-align: center;
+}
+
+/* 隐藏 */
+.hList{
+	display: none;
+}
+
+.helpCenterList:hover .hList{
+	display: block;
+}
+
+
+/* 3. 主体 */
+
+/* 3.1 主体大框 */
+.innersecBody{
+	width: 1200px;
+	margin: 0 auto;	
+}
+
+/* 左边 促销图 */
+.secbodyleft{
+	margin-top: 40px;
+	margin-left: 112px;
+}
+/* 右边 登录框 */
+.tableForm{
+	margin: 81px 110px 53px 0px;
+	width: 328px;
+}
+
+/* 第一个 登录框标题 */
+.loginTitle h3{
+	color: #666666;
+	
+	font-weight: bold;
+	font-size: 14px; 
+	/* font: bold 16px "微软雅黑"; */
+	margin-bottom: 10px;
+}
+
+/* 第一个 登录框标题的 超链接 */
+.loginTitle a {
+	color: #007EDB;
+}
+
+.loginTitle a:hover {
+	color: #FF6600;
+}
+
+/* 第二个 用户名  第三个 密码*/
+.userInput{
+	border: 1px solid #DEDEDE;
+	width: 328px;
+	height: 52px;
+	line-height: 52px;
+	margin-bottom: 10px;
+	background-color: #FFFFFF;
+}
+
+/* 第二个框的小图标 */
+.userHead{
+	display: inline-block;
+	height: 24px;
+	width: 24px;
+	background: url(../img/userHead.png) no-repeat;
+	background-size: 100% 100%;		/* 宽	高 */
+	vertical-align: middle;
+	margin-left: 18px;
+}
+
+/* 第二个 用户名  第三个 密码  里面的输入框 */
+.userInput input{
+	width: 250px;
+	height: 24px;
+	line-height: 24px;
+	margin-left: 20px;
+	border: 0px;
+	outline: none;
+	vertical-align: middle;
+	/* 这里是用户输入文字样式 */
+	font-size: 14px;
+	color: #000000;
+}
+
+/* 第三个框的小图标  */
+.lock{
+	display: inline-block;
+	height: 24px;
+	width: 24px;
+	background: url(../img/lock.png) no-repeat;
+	background-size: 100% 100%;		/* 宽	高 */
+	vertical-align: middle;
+	margin-left: 18px;
+}
+
+/* 第四个 自动登录 */
+.autoLoginTable{
+	padding-top: 8px;
+	padding-bottom: 18px;
+}
+
+/* 第四个框的超链接 */
+.autoLoginTable a {
+	color: #A9A9A9;
+}
+.autoLogin input{
+	vertical-align: middle;
+}
+
+.autoLogin:hover {
+	border: 1px solid #A6C8FF;
+}
+
+/* 第五个框 登录按钮 */
+.subBtn{
+	width: 330px;
+	height: 52px;
+	background-color: #FF3C3C;
+	color: #FFFFFF;
+	font-size: 16px;
+	border: 0px none;
+	border-radius: 3px;
+	cursor: pointer;	/* 按钮变手 */
+	margin-bottom: 18px;
+	/* box-shadow: #A9A9A9 -3px -3px 3px;	框阴影 */
+	/* text-shadow: ;	文字阴影 */
+}
+
+/* 第六框 更多合作标题 */
+.moreWeb{
+	color: #666666;
+	margin-bottom: 18px;
+}
+
+
+/* 第七框 友情图片链接 */
+.firendWebs li a{
+	width: 36px;
+	height: 36px;
+	float: left;
+	margin-right: 22px;
+}
+
+/* 友情图片 没有鼠标经过的时候 */
+.firendWebs li:nth-of-type(1) a{
+	background: url(../img/qqf.png);
+	background-size: 100% 100%;
+}
+
+.firendWebs li:nth-of-type(2) a{
+	background: url(../img/wbf.png);
+	background-size: 100% 100%;
+}
+
+.firendWebs li:nth-of-type(3) a{
+	background: url(../img/zhif.png);
+	background-size: 100% 100%;
+}
+
+.firendWebs li:nth-of-type(4) a{
+	background: url(../img/wxf.png);
+	background-size: 100% 100%;
+}
+
+/* 友情图片 没有鼠标经过的时候 */
+.firendWebs li:nth-of-type(1) a:hover{
+	background: url(../img/qqt.png);
+	background-size: 100% 100%;
+}
+
+.firendWebs li:nth-of-type(2) a:hover{
+	background: url(../img/wbt.png);
+	background-size: 100% 100%;
+}
+
+.firendWebs li:nth-of-type(3) a:hover{
+	background: url(../img/zhit.png);
+	background-size: 100% 100%;
+}
+
+.firendWebs li:nth-of-type(4) a:hover{
+	background: url(../img/wxt.png);
+	background-size: 100% 100%;
+}
+
+/* 更多合作网站 */
+.loadMore{
+	height: 36px;
+	line-height: 36px;
+	color: #999999;
+}
+
+/* 更多合作网站 后面图标 */
+.loadMore i{
+	width: 18px;
+	height: 14px;
+	display: inline-block;
+	background: url(../img/loadMore.png);
+	background-size: 100% 100%;
+	margin-left: 6px;
+	vertical-align: middle;
+}
+
+/* 底部大框 */
+.innerFooter{
+	width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.innerFooter p {
+	margin-bottom: 16px;
+	color: #333333;
+}
+
+.innerFooter span{
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+.innerFooter span:nth-of-type(1):hover {
+	color: #FF3C3C;
+	cursor: pointer;	/* 按钮变手 */
+}
+
+.innerFooter span:nth-of-type(3):hover {
+	color: #FF3C3C;
+}
+
+.innerFooter span:nth-of-type(5):hover {
+	color: #FF3C3C;
+	cursor: pointer;	/* 按钮变手 */
+}
+
+
+/* 修改里面input输入框里的placeholder文字 */
+.userInput input::-webkit-input-placeholder{
+	font-size: 14px;
+	color: #A9A9A9;
+	vertical-align: middle;
+}
+
+

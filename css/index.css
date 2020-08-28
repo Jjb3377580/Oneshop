@@ -1,0 +1,897 @@
+/* 网页初始化 */
+body,
+html,
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	font: 12px arial, heivetice, sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: #555555;
+}
+
+a:hover{
+	color: #FF4040;
+}
+
+img {
+	vertical-align: middle;
+	/* 垂直居中 */
+	font-size: 14px;
+	color: red;
+}
+
+.fl {
+	float: left;
+	/* 左浮动 */
+}
+
+.fr {
+	float: right;
+	/* 右浮动 */
+}
+
+.clear:after {
+	/* 清除浮动 */
+	content: ' ';
+	display: block;
+	clear: both;
+}
+
+/* 上外边距20px */
+.marginT20{
+	margin-top: 20px;
+}
+
+/* 下外边距28px */
+.marginB28{
+	margin-bottom: 28px;
+}
+
+/* 行幅广告 */
+.mban{
+	margin-top: 20px;
+	margin-bottom: 28px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* 头部区域 */
+/* 上部 个人中心 */
+.headTopDiv{
+	width: 100%;
+	height: 35px;
+	/* 线性渐变颜色 */
+	background: linear-gradient(to bottom , #D1D1D1 , #F4F4F4 , #F5F5F5);
+}
+/* 左边 送货目的地 */
+.toCity{
+	margin-left: 50px;
+	height: 36px;
+	line-height: 36px;
+	color: #555555;
+}
+
+/* 右边 个人中心 */
+.PersonalCenter{
+	margin-right: 32px;
+	height: 36px;
+	line-height: 36px;
+	color: #555555;
+}
+
+/* 1. 用户登录的第二个a标签 */
+.PersonalCenter .freeRegister{
+	margin-left: 2px;
+	color: #FF4040;
+}
+
+/*2. 用户服务列表 */
+.sList{
+	height: 36px;
+	line-height: 36px;
+}
+
+.sList li{
+	height: 36px;
+	line-height: 36px;
+	float: left;
+	padding-right: 15px;
+	margin-left: 10px;
+	background: url(../img/t_arrow.gif) no-repeat right; /* 只显示一次 no-repeat */
+}
+
+/*3. 图标友情链接 */
+.friendA{
+	margin-left: 14px;
+	height: 36px;
+	line-height: 36px;
+}
+
+.shIcon a{
+	float: left;
+	display: inline;
+	/* display: inline-block; */
+	width: 18px;
+	height: 36px;
+	line-height: 36px;
+	margin: 0px 4px;
+}
+
+/*3. 友情链接图标 新浪*/
+.shIcon .sh1{
+	text-indent: -99999em;
+	margin-left: 2px;
+	margin-right: 4px;
+	background: url(../img/sh1.png) no-repeat center 8px;
+}
+
+
+/*3. 友情链接图标 微信*/
+.shIcon .sh2{
+	text-indent: -99999em;
+	background: url(../img/sh2.png) no-repeat center 11px;
+}
+
+/* 手机图标 */
+.mobilphoneIcon{
+	position: relative;
+	bottom: 1px;
+}
+
+/* 下部 logo + 搜索 + 购物车 */
+.footerTopDiv{
+	box-sizing: border-box;
+	width: 1200px;
+	margin: 0 auto;
+	/* border: 1px solid red; */
+	padding: 0px 24px 0px 37px;
+}
+
+/* 左边 logo */
+.logo{
+	margin: 41px 0px 29px 0px;
+}
+
+/* 中间 搜索 */
+.search{
+	margin-left: 99px;
+	margin-top: 50px;
+}
+
+/* 中间 输入框 */
+.search .search_text{
+	width: 386px;
+	height: 36px;
+	line-height: 36px;
+	border: 2px solid #FF3C3C;
+	padding: 0px;
+	padding-left: 10px;
+	padding-right: 10px;
+	outline: none;
+}
+
+/* 中间 输入框的提示文字 */
+.search .search_text::-webkit-input-placeholder{
+	/* text-indent: 10px; */
+	font-size: 14px;
+	color: #A9A9A9;
+}
+
+/* 中间 搜索按钮 */
+.search .search_button{
+	width: 88px;
+	height: 40px;
+	line-height: 38px;
+	font-size: 16px;
+	color: #FFFFFF;
+	background-color: #FF3C3C;
+	border: 0px none;	/* 去掉灰色阴影边框样式 */
+	outline: none;		/* 去掉蓝色默认边框 */
+	cursor: pointer;	/* 按钮变手 */
+}
+
+.search a{
+	margin-right: 12px;
+}
+
+/* 右边 购物车 */
+.iCar{
+	box-sizing: border-box;
+	width: 122px;
+	height: 40px;
+	line-height: 38px;
+	font-size: 14px;
+	color: #555555;
+	text-align: center;
+	margin-top: 50px;
+	/* margin-left: 210px; */
+	border: 1px solid #D9D9D9;
+	background-color: #F6F6F6;
+	/* background: url(../img/car.png) no-repeat left #F6F6F6; */
+	text-indent: 18px;
+	position: relative;	/* 相对定位 */
+}
+
+.iCar .car{
+	display: inline-block;
+	width: 17px;
+	height: 15px;
+	background: url(../img/car.png) no-repeat;
+	/* background-size: 100% 100%; */ /* 把背景图片百分比放大或放小 */
+	position: absolute;	/* 绝对定位 */
+	left: 10px;
+	top: 11px;
+}
+
+
+/* 主体区域 */
+.SecCenter{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+/* 左边二级导航区域 */
+.leftNav{
+	width: 211px;
+	background-color: #B01D1D;
+}
+
+/* 左边上部 标题 */
+.leftNav .nav_title{
+	height: 44px;
+	line-height: 44px;
+	color: #FFFFFF;
+	font-size: 16px;
+	text-indent: 35px;
+	background-color: #FF3C3C;
+	cursor: pointer;	/* 按钮变手 */
+	/* border-bottom: 2px solid #FF4E00; */
+}
+
+/* 左边下部 二级导航 */
+.secondNav ul li{
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;
+	color: #FFFFFF;
+	cursor: pointer;	/* 按钮变手 */
+	/* background: url(../img/n_arrow.gif) no-repeat 191px center; */
+	/* 过度时间指定消耗时间 */
+	transition: all 1s;
+	/* -webkit-transition-delay: 2s;
+	-webkit-transition-duration: 0.5s;
+	-webkit-transition-timing-function: ease;
+	-webkit-transition-property: ; */
+}
+
+/* 鼠标经过 */
+.secondNav ul li:hover{
+	transform: translateX(20px);
+	/* transform: rotate3d(20px); */
+}
+
+
+
+.secondNav .ln_img{
+	display: inline-block;	
+	/* float: left; */		/* 这两个都可以,不是行标签就行 */
+	width: 20px;
+	height: 40px;
+	line-height: 40px;
+	margin: 0px 10px;	/* 左右外边距10像素 */
+	text-align: center;
+}
+
+/* 二级导航 每一行图片 */
+.secondNav ul li img{
+	vertical-align: middle;
+}
+
+.rightNav{
+	width: 989px;
+	height: 43px;
+	line-height: 43px;
+	border-bottom: 2px solid #FF4E00;
+	/* z-index: 99;  叠层效果越大数值就在越上面*/ 
+}
+
+/* 左边目录 */
+.firstNav li{
+	float: left;
+	width: 70px;
+	height: 44px;
+	line-height: 44px;
+	text-align: center;
+	margin-right: 10px;
+}
+
+.firstNav li a{
+	color: #3E3E3E;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.firstNav .firstNav_emp{
+	color: #FF3C3C;
+}
+
+
+/* 轮播图 (或者焦点图) */
+.banner{
+	width: 740px;
+	margin-left: 12px;
+	position: relative;
+}
+
+/* 图片切换按钮 */
+.ban_Num{
+	position: absolute;
+	bottom: 20px;
+	left: 44%;
+}
+
+/* 每一个li的元素 */
+.ban_Num li{
+	float: left;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	background-color: #CCC0B3;
+	border-radius: 50%;
+	text-align: center;
+}
+
+.ban_Num li:hover{
+	background-color: #FF3C3C;
+}
+
+.ban_Num li:hover a{
+	color: #FFFFFF;
+}
+
+.ban_Num li a{
+	color: #000000;
+	font-weight: bold;
+}
+
+.ban_Num li:nth-of-type(2){
+	margin: 0px 8px;
+}
+
+/* 左 符号按钮 */
+.banner .ban_prev{
+	position: absolute;
+	left: 0px;
+	top: 169.5px;
+}
+
+/* 右 符号按钮 */
+.banner .ban_btnNext{
+	position: absolute;
+	right: 0px;
+	top: 169.5px;
+}
+
+/* 快讯 */
+.News{
+	box-sizing: border-box;
+	width: 208px;
+	height: 399px;
+	border: 1px solid #D9D9D9;
+}
+
+.News .NewsOne{
+	height: 38px;
+	line-height: 38px;
+	border-bottom: 1px dashed #D9D9D9;
+}
+
+.NewsOne strong{
+	font-size: 16px;
+	padding-left: 10px;
+	padding-right: 115px;
+}
+
+.News .NewsTwo{
+	height: 180px;
+	padding-left: 11px;
+	border-bottom: 1px solid #D9D9D9;
+}
+
+.NewsTwo li{
+	padding-top: 15px;
+	
+}
+
+.News .NewsThree{
+	height: 38px;
+	line-height: 38px;
+	font-size: 16px;
+	padding-left: 10px;
+	border-bottom: 1px dashed #D9D9D9;
+}
+
+.News .NewsFour{
+	padding-top: 4px;
+	padding-left: 10px;
+}
+
+.NewsFour img{
+	/* width: 95%;
+	height: 90%; */
+	padding-top: 4px;
+}
+
+/* 第二个大框 热门商品区域 */
+/* 左边 热门商品广告 */
+.hotAD{
+	width: 211px;
+	height: 230px;
+	background-color: #D8EEFC;
+	overflow: hidden;
+	
+}
+
+/* 左边图片动画效果 放大 */
+.hotAD .hotADimg:hover img{
+	/* 动画效果 */
+	transform: scale(1.1 , 1.1);
+}
+
+.hotADimg img{
+	/* 过渡效果 */
+	transition: all 0.5s;
+}
+
+/* 上边 图片 */
+.hotAD .hotADimg{
+	text-align: center;
+	margin-top: 8px;		/* 总体外边距12px-图片4px白边 */
+	margin-bottom: 9px;		/* 总体外边距11px-图片2px白边 */
+}
+
+/* 下边 价格 */
+.hotAD .hotADtext{
+	text-align: center;
+}
+
+/* 价格 */
+.hotADtext .hotADprice{
+	display: inline-block;
+	width: 59px;
+	height: 20px;
+	line-height: 20px;
+	color: #FFFFFF;
+	font-size: 14px;
+	background-color: #FF4E00;
+	margin-right: 16px;		/* 总宽度20-4 */
+}
+
+/* 优惠价格 */
+.hotADtext .hotADfree{
+	color: #F57100;
+}
+
+/* 右边 热门商品4个 */
+.hot_pro{
+	box-sizing: border-box;
+	width: 977px;
+	height: 230px;
+	border: 1px solid #EAEAEA;
+	position: relative;
+	overflow: hidden;		/* 将会隐藏超出div宽度高度的内容 */
+}
+
+/* 左边按钮 */
+.hot_pro .hot_prev{
+	position: absolute;
+	left: 0;
+	top: 85px;
+}
+
+/* 右边按钮 */
+.hot_pro .hot_btnNext{
+	position: absolute;
+	right: 0;
+	top: 85px;
+}
+
+/* 四个热门商品的每个css样式 */
+.hot_sort .hot_sort_li{
+	width: 243px;
+	height: 230px;
+	border-right: 1px solid #EAEAEA;
+	float: left;
+	position: relative;		/* 给每个li加上class名称 方便后期图片定位 */
+	
+}
+
+
+
+.feature{
+	width: 3900px;
+}
+
+/* 热门图标 */
+.hot_sort_li .hot_ico{
+	position: absolute;
+	left: 30px;
+	top: 20px;
+	z-index: 999;
+}
+
+/* 热门商品图片 */
+.hot_sort_li .hot_pro_pic:hover  img{
+	/* 动画效果 */
+	/* transform: scale(1.1 , 1.1); */
+	transform: scale3d(1.1 , 1.1 , 1.1);
+}
+
+.hot_pro_pic img{
+	/* 过渡效果 */
+	transition: all 0.5s;
+}
+
+.hot_sort_li .hot_pro_pic{
+	text-align: center;
+	margin-top: 11px;
+	margin-bottom: 13px;
+}
+
+/* 热门商品名称 */
+.hot_sort_li .hot_pro_name{
+	text-align: center;
+	margin-bottom: 7px;
+}
+
+.hot_sort_li .hot_pro_name a{
+	color: #888888;
+}
+
+.hot_sort_li .hot_pro_name h2{
+	height: 16px;
+	line-height: 16px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #3E3E3E;
+	margin-bottom: 1px;
+}
+
+/* 热门商品价格 */
+.hot_sort_li .hot_pro_price{
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	color: #888888;
+}
+
+.hot_sort_li .hot_pro_price strong{
+	font-size: 14px;
+	color: #FF4E00;
+	margin-right: 13px;
+}
+
+.hot_sort_li .hot_pro_price strong span{
+	font-size: 20px;
+}
+
+
+/* 第三个大框 进口生鲜 */
+
+/* 第三个大框  上部 */
+.fruiTitle{
+	height: 40;
+	line-height: 40px;
+	border-bottom: 2px solid #FF4F00;
+}
+
+/* 上部 左边 楼层标题*/
+.fTitle{
+	font-size: 18px;
+	color: #FF4F00;
+}
+
+.fTitle .floorNum{
+	display: inline-block;
+	width: 33px;
+	height: 34px;
+	color: #FFFFFF;
+	font-size: 14px;
+	text-indent: 6px;
+	background: url(../img/floor.png) no-repeat center center;
+	margin-left: 6px;
+	margin-right: 10px;
+}
+
+.fTitle .floorText{
+	position: relative;
+	top: 1px;
+}
+
+/* 上部 右边 二级分类*/
+.fSort a{
+	margin-right: 21px;
+}
+
+.fSort a:nth-of-type(5){
+	margin-right: 15px;
+}
+
+/* 第三个大框  下部 */
+
+/* 左边 上 轮播图  */
+.fNav{
+	width: 211px;
+}
+
+.fNav_pic{
+	position: relative;
+	overflow: hidden;
+}
+
+.fNav_pic .f_btnPrev{
+	position: absolute;
+	top: 123px;
+	left: 0px;	
+}
+
+.fNav_pic .f_btnNext{
+	position: absolute;
+	top: 123px;
+	right: 0px;	
+}
+
+/* 动画效果 放大 */
+.fNav_pic:hover .fNav_pic_img{
+	transform: scale(1.1,1.1);
+}
+
+.fNav_pic_img{
+	transition: all 0.5s;
+}
+
+
+
+
+/* 左边 下 二级导航 */
+.fNav .fNav_text{
+	box-sizing: border-box;
+	width: 211px;
+	height: 155px;
+	padding-top: 11px;
+	background: url(../img/s_txt.png) no-repeat;
+	background-color: #A7E5BE;
+}
+
+
+.fNav .fNav_text a{
+	display: inline-block;
+	height: 30;
+	line-height: 30px;
+	margin-left: 20px;
+	margin-right: 12px;		/* 32-20 */
+}
+
+/* 中间 具体商品 */
+.fruit_pro{
+	width: 729px;
+	height: 441px;
+	overflow: hidden;		/* 将会隐藏超出div宽度高度的内容 */
+}
+
+/* 小框div整体css */
+.fruit_pro li{
+	float: left;
+	width: 242px;
+	height: 220px;
+	border-left: 1px solid #EAEAEA;
+	border-bottom: 1px solid #EAEAEA;
+	overflow: hidden;
+}
+
+.fruit_pro .fp_pic img{
+	/* max-width: 185px;
+	max-height: 133px; */
+	/* 支持宽度高度的等比缩放
+	 不支持宽度高度的不等比缩放*/
+}
+
+/* 商品图片 */
+.fruit_pro .fp_pic{
+	text-align: center;
+}
+
+/* 动画效果 放大 */
+.fruit_pro ul a li:hover .fp_pic_img {
+	transform: scale(1.1,1.1);
+}
+
+.fp_pic_img{
+	transition: all 0.5s;
+}
+
+
+
+/* 商品名称 */
+.fruit_pro .fp_name{
+	height: 14px;
+	line-height: 14px;
+	text-align: center;
+	font-size: 14px;
+	margin-top: 21px;		/* 22-1 文字偏差 */
+	margin-bottom: 18px;	/* 20-2 文字偏差 */
+}
+
+.fruit_pro .fp_pri{
+	height: 18px;
+	line-height: 18px;
+	text-align: center;
+	font-size: 18px;
+	color: red;
+	margin-bottom: 10px;
+}
+
+/* 底部区域 */
+.footerNB{
+	width: 1200px;
+	margin: 0 auto;
+	/* border-bottom: 1px solid red; */
+}
+
+/* 第一层 保障 */
+.slogan{
+	margin-top: 50px;
+	margin-bottom: 64px;
+	text-align: center;
+}
+
+.slogan ul{
+	/* 第二种方法
+	display: inline-block;
+	text-align: center; */
+	/* 第三种方法 */
+	display: flex;
+	justify-content: center;
+}
+
+.slogan ul li{
+	/* 第二种方法
+	float: left;
+	第一种方法
+	display: inline-block; */
+	margin-left: 125px;
+}
+
+.slogan ul li:nth-of-type(1){
+	margin-left: 0px;
+}
+
+.slogan_1{
+	height: 16px;
+	line-height: 16px;
+	font-size: 16px;
+	color: #3E3E3E;
+	margin-top: 13px;
+	margin-bottom: 9px;
+}
+
+.slogan_2{
+	height: 14px;
+	line-height: 14px;
+	font-size: 14px;
+	color: #888888;
+}
+
+.slogan ul li a:hover img{
+	transform: scale(1.2,1.2) rotate(360deg);
+}
+
+.slogan ul li a img{
+	transition: all 1s;
+}
+
+/* 第二层 售后 */
+
+.slogantwo{
+	margin-bottom: 28px;
+}
+
+.slogantwo ul li:nth-of-type(1){
+	height: 16px;
+	line-height: 16px;
+	font-size: 16px;
+	margin-bottom: 22px;
+}
+
+.slogantwo ul li{
+	height: 12px;
+	line-height: 12px;
+	font-size: 12px;
+	margin-bottom: 12px;
+}
+
+.slogantwo ul{
+	display: inline-block;
+	width: 152px;
+	float: left;
+}
+.slogantwo ul:nth-of-type(1){
+	margin-left: 50px;
+}
+
+.slogantwo .slogantwo_1{
+	float: left;
+	margin-left: 42px;
+	margin-right: 16px;
+}
+
+.slogantwo .slogantwo_1 div img{
+	margin-top: 20px;
+}
+
+.two_21{
+	/* height: 14px;
+	line-height: 14px; */
+	font-size: 14px;
+	color: #888888;
+	/* align-items: center; */
+}
+
+.two_22{
+	font-size: 10px;
+	margin-top: 26px;
+}
+
+
+.two_23{
+	font-size: 20px;
+	margin-top: 8px;
+	color: red;
+}
+
+.sloganthree{
+	border-top: 1px solid #888888;
+}
+
+.sloganthree_1{
+	width: 100%;
+	text-align: center;
+	margin-top: 34px;
+	color: #888888;
+}
+
+.sloganthree_2{
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+.sloganthree_2 a img{
+	border: 1px solid #888888;
+	border-radius: 10px;
+	margin-right: 10px;
+}

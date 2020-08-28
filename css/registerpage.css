@@ -1,0 +1,318 @@
+/* 网页初始化 */
+body,
+html,
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	font: 12px arial, heivetice, sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	vertical-align: middle;
+	/* 垂直居中 */
+	font-size: 14px;
+	color: red;
+}
+
+.fl {
+	float: left;
+	/* 左浮动 */
+}
+
+.fr {
+	float: right;
+	/* 右浮动 */
+}
+
+.clear:after {
+	/* 清除浮动 */
+	content: ' ';
+	display: block;
+	clear: both;
+}
+
+/* 超链接样式 */
+a:link{color: #000000;}
+a:visited{color: #000000;}
+a:hover{color: #FF6600;}
+a:active{color: #FF6600;}
+
+/* 整个网页 */
+body{
+	background-color: #FCFCFC;
+}
+
+
+
+/*  头部 */
+#headNav {
+	padding: 16px;
+	border-bottom: 1px solid #1E1E1E;
+	box-shadow: 0px 0px 10px #cccccc;
+	background-color: #FFFFFF;
+}
+
+/* 2.1 头部大框 */
+.innerHeader {
+	width: 1200px;
+	margin: 0 auto;
+	position: relative;
+}
+
+/* 2.2 右边 个人中心 */
+.headerFont {
+	margin-top: 18px;
+	/* border: 1px solid red; */
+}
+
+.headerFont span {
+	color: #999999;
+}
+
+/* 个人中心 超链接 */
+.headerFont a {
+	color: #007EDB;
+	line-height: 20px;
+	vertical-align: middle;
+}
+
+.headerFont a:hover {
+	color: #FF6600;
+}
+
+/* 帮助中心 */
+.headerFont .heIpCenter {
+	color: #000000;
+	margin-left: 25px;
+
+}
+
+/* 自定义标签 */
+.runbun,
+.turnb {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	margin: 0px 5px;
+	vertical-align: middle;
+}
+
+/* 游泳圈 */
+.runbun {
+	background: url(../img/runbun.png) no-repeat;
+	background-size: 100% 100%;	/* 宽	高 */
+	position: relative;
+	/* 相对定位 */
+	bottom: 1px;
+}
+
+.turnb {
+	background: url(../img/turnb.png) no-repeat;
+	background-size: 100% 100%;	/* 宽	高 */
+}
+
+.helpCenterList {
+	line-height: 24px;
+	width: 98px;
+	border: 1px solid #CCCCCC;
+	position: absolute;
+	right: 2px;
+	top: 15px;
+}
+
+/* 下拉列表 */
+.hList li{
+	height: 24px;
+	line-height: 24px;
+	border-top: 1px solid #CCCCCC;
+	text-align: center;
+}
+
+/* 隐藏 */
+.hList{
+	display: none;
+}
+
+.helpCenterList:hover .hList{
+	display: block;
+}
+
+
+
+/* 主体区域 */
+#secBody{
+	text-align: center;
+}
+
+#secBody div input{
+	outline: none; /* 去掉默认显示边框 */
+}
+
+.secBodytitle{
+	font-size: 24px;
+	font-weight: bold;
+	margin-top: 40px;
+	margin-bottom: 22px;
+}
+
+.secBody_One input{
+	box-sizing: border-box;
+	width: 330px;
+	height: 54px;
+	line-height: 54px;
+	font-size: 14px;
+	color: #666666;
+	padding-left: 20px;
+	margin-bottom: 8px;
+	border: 1px solid #DEDEDE;
+}
+
+.secBody_Two input{
+	box-sizing: border-box;
+	width: 194px;
+	height: 54px;
+	line-height: 54px;
+	font-size: 14px;
+	color: #666666;
+	padding-left: 20px;
+	margin-bottom: 10px;
+	margin-right: 6px;
+	border: 1px solid #DEDEDE;
+}
+
+.secBody_Two button{
+	box-sizing: border-box;
+	width: 126px;
+	height: 54px;
+	line-height: 54px;
+	color: #FFFFFF;
+	font-weight: bold;
+	margin-bottom: 10px;
+	border: 1px solid #57565F;
+	cursor: pointer;
+	position: relative;
+	top: 2px;
+}
+
+.secBody_Two button {
+	background-color: #57565F;
+}
+
+.secBody_Two button:hover {
+	background-color: #4D4B55;
+}
+
+.secBody_Three input{
+	box-sizing: border-box;
+	width: 330px;
+	height: 54px;
+	line-height: 54px;
+	font-size: 14px;
+	color: #666666;
+	padding-left: 20px;
+	margin-bottom: 10px;
+	border: 1px solid #DEDEDE;
+}
+
+.secBody_Four input{
+	box-sizing: border-box;
+	width: 330px;
+	height: 54px;
+	line-height: 54px;
+	font-size: 14px;
+	color: #666666;
+	padding-left: 20px;
+	margin-bottom: 22px;
+	border: 1px solid #DEDEDE;
+}
+
+.secBody_Fives{
+	color: #666666;
+	padding-right: 80px;
+	margin-bottom: 12px;
+}
+
+.secBody_Fives a {
+	color: #007EDB;
+}
+
+.secBody_Fives a:hover {
+	color: #FF6600;
+}
+
+.secBody_six button{
+	box-sizing: border-box;
+	width: 330px;
+	height: 52px;
+	line-height: 52px;
+	font-size: 14px;
+	color: #FFFFFF;
+	border: 1px solid #FF3C3C;
+	margin-bottom: 24px;
+	cursor: pointer;
+}
+
+.secBody_six button {
+	background-color: #FF3C3C;
+}
+
+.secBody_six button:hover {
+	background-color: #FA1717;
+}
+
+/* 底部大框 */
+.innerFooter{
+	width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.innerFooter p {
+	margin-bottom: 16px;
+	color: #333333;
+}
+
+.innerFooter span{
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+.innerFooter span:nth-of-type(1):hover {
+	color: #FF3C3C;
+	cursor: pointer;	/* 按钮变手 */
+}
+
+.innerFooter span:nth-of-type(3):hover {
+	color: #FF3C3C;
+}
+
+.innerFooter span:nth-of-type(5):hover {
+	color: #FF3C3C;
+	cursor: pointer;	/* 按钮变手 */
+}
+
+
+/* 修改里面input输入框里的placeholder文字 */
+.userInput input::-webkit-input-placeholder{
+	font-size: 14px;
+	color: #A9A9A9;
+	vertical-align: middle;
+}
+
+
